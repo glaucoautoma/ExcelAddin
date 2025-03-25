@@ -1,0 +1,22 @@
+[project]
+name = "exceladdin"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "glaucoautoma",email = "glauco.filho@automapower.com.br"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas (>=2.2.3,<3.0.0)",
+    "sqlalchemy (>=2.0.39,<3.0.0)",
+    "xlwings (>=0.33.11,<0.34.0)"
+]
+packages = [{include = "exceladdin"}]
+
+[tool.poetry.scripts]
+exceladdin = "exceladdin.cli:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
